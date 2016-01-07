@@ -1,0 +1,20 @@
+{
+  "name": "codeby-default",
+  "vendor": "codeby",
+  "title": "",
+  "description": "",
+  "version": "0.1.0",
+  "dependencies": {
+    "vtex.editor": "0.x",
+    "vtex.storefront": "0",
+    "vtex.banner": "0.x",
+    "vtex.shelf": "0.x",
+    "vtex.product-page-wrapper": "0.x",
+    "vtex.product-image": "0.x",
+    "vtex.filter-panel": "0.x",
+    "vtex.product-list": "0.x",
+    "vtex.navigation-menu": "0.x",
+    "vtex.search-bar": "0.x",
+    "vtex.shipping-calculator": "0.x"
+  }
+}
