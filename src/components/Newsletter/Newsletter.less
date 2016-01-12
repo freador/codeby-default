@@ -1,0 +1,83 @@
+@import "~utils/base/base";
+
+.Newsletter {
+  margin-top: 50px;
+  background-color: #EDAF97;
+
+  //All Screens Except Mobile
+  @media (min-width: @screen-md-min) {
+    padding: 15px 0px;
+  }
+
+  &__wrap {
+    @desktop-width: 60%;
+    max-width: @mobile-width;
+    margin: 0 auto;
+
+    //All Screens Except Mobile
+    @media (min-width: @screen-md-min) {
+      max-width: @desktop-width;
+      margin: 0 auto;
+    }
+  }
+
+  &__cta {
+    float: left;
+    height: 30px;
+    margin-bottom: 0;
+    padding: 20px 15px 5px 15px;
+
+    @media (min-width: @screen-md-min) {
+      width: 25%;
+      padding: 0px;
+    }
+
+    @media (min-width: @screen-md-min) and (max-width: 1126px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__cta-text {
+    font-family: @display-font;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 600;
+    text-align: left;
+
+    @media (min-width: @screen-lg-min) {
+      line-height: 30px;
+    }
+  }
+
+  &__form {
+    float: right;
+    padding: 15px;
+    padding-bottom: 25px;
+
+    @media (min-width: @screen-md-min) {
+      width: 75%;
+      padding: 0px;
+    }
+
+    @media (min-width: @screen-md-min) and (max-width: 1126px) {
+      margin-top: 7.5px;
+    }
+  }
+
+  &__form-input {
+    height: 30px;
+    border: none;
+    border-radius: 2.5px;
+  }
+
+  &__form-button {
+    .css-utils-clean-btn();
+    background-color: #153243;
+    border-top-right-radius: 2.5px;
+    border-bottom-right-radius: 2.5px;
+    color: #fff;
+    margin-bottom: 0;
+    height: 30px;
+    width: 80px;
+  }
+}

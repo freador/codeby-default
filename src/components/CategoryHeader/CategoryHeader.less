@@ -1,0 +1,54 @@
+@import "~utils/base/base";
+
+.CategoryHeader {
+  background: #F7F7F7;
+
+  &__icon {
+    float: left;
+    display: inline-block;
+    padding-top: 7.5px;
+  }
+
+  &__grid-button {
+    .css-utils-clean-btn();
+    .css-utils-no-outlines();
+    float: right;
+    padding-left: @pad / 2;
+    padding-right: @pad / 2;
+  }
+
+  &__container {
+    padding: (@pad * 3) 0px;
+  }
+
+  &__content {
+    margin-bottom: 1em;
+  }
+
+  &__title {
+    padding: 0px (@pad * 2);
+  }
+
+  &__title-inner {
+    float: left;
+    font-family: 'Lato';
+    font-weight: 200;
+    margin-top: 0px;
+    margin-bottom: @pad / 2;
+    max-width: 80%;
+    padding: 0px;
+    text-align: left;
+  }
+
+  &__buttons {
+    margin-top: 0.75em;
+    padding: 0px (@pad * 2);
+  }
+
+  &__results {
+    color: #777777;
+    display: block;
+    font-family: 'Lato';
+    font-weight: 400;
+  }
+}

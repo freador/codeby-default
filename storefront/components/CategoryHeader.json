@@ -1,0 +1,17 @@
+{
+  "resourceBindings": [
+    {
+      "locator": "search@vtex.storefront-sdk",
+      "relativePath": "/{{ account }}/facets",
+      "queryParams": {
+        "category": "{{ route.splat }}",
+        "brands": "{{ query.brands }}"
+      },
+      "bindTo": "facets@vtex"
+    }
+  ],
+  "assets": [
+    "common.js",
+    "CategoryHeader.js"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="32px" viewBox="0 0 22 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
+    <title>frontArrow_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="frontArrow_icon" sketch:type="MSArtboardGroup" transform="translate(-39.000000, -34.000000)" fill="#000000">
+            <g sketch:type="MSLayerGroup" transform="translate(50.000000, 50.000000) rotate(-180.000000) translate(-50.000000, -50.000000) translate(39.000000, 34.000000)">
+                <path d="M0.727689433,14.2123183 C-0.227258202,14.93856 -0.24518749,16.3689659 0.69125697,17.1189151 L18.7314912,31.5663907 C19.5262736,32.2028903 20.686557,32.0745766 21.3230565,31.2797941 C21.959556,30.4850116 21.8312423,29.3247283 21.0364599,28.6882288 L2.99622567,14.2407531 L2.95979321,17.1473498 L21.1529107,3.31140748 C21.9633973,2.69502904 22.120753,1.53832641 21.5043746,0.727839848 C20.8879962,-0.0826467158 19.7312935,-0.240002443 18.920807,0.376375994 L0.727689433,14.2123183 Z" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

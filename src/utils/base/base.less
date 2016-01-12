@@ -1,0 +1,14 @@
+@import "~vtex-css-utils/less/_css-utils";
+@import "theme";
+@import "theme-exports.less";
+
+.theme-width() {
+  //All Screens Except Mobile
+  @media (min-width: @screen-md-min) {
+    max-width: @desktop-width;
+    margin: 0 auto;
+  }
+
+  max-width: @mobile-width;
+  margin: 0 auto;
+}

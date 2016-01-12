@@ -1,0 +1,49 @@
+@import "~utils/base/base";
+
+.CategoryOption {
+  display: block;
+  background-color: #FFF;
+  border-right: (@pad / 3) solid @gray-solid-a;
+  border-left: (@pad / 3) solid @gray-solid-a;
+  border-bottom: (@pad / 4) solid @gray-solid-a;
+
+  &:first-child {
+    border-top: (@pad / 3) solid @gray-solid-a;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  &:last-child {
+    border-bottom: (@pad / 3) solid @gray-solid-a;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  &__button {
+    .css-utils-clean-btn();
+    .css-utils-no-outlines();
+    background-color: #FFF;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 1em (@pad * 2);
+
+    &:hover, &:active, &:focus {
+      text-decoration: none;
+      background-color: @gray-solid-c;
+    }
+  }
+
+  &__label {
+    color: @gray-solid-b;
+    float: left;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+
+  &__icon {
+    float: right;
+  }
+}

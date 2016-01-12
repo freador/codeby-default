@@ -1,9 +1,12 @@
 import React from 'react';
-import './HomePage.less';
 import { actions, stores } from 'sdk';
-import HelloWorld from 'components/HelloWorld/HelloWorld';
+import Header from 'components/Header';
+import Footer from 'components/Footer/Footer';
+import Newsletter from 'components/Newsletter/Newsletter';
+import Policies from 'components/Policies/Policies';
+import './HomePage.less';
 
-// const Area = stores.ComponentStore.state.getIn(['Area@vtex.storefront-sdk', 'constructor']);
+const Area = stores.ComponentStore.state.getIn(['Area@vtex.storefront-sdk', 'constructor']);
 
 class HomePage extends React.Component {
   componentWillMount() {
@@ -12,12 +15,22 @@ class HomePage extends React.Component {
       actions.AreaActions.getAreaResources({currentURL, id: 'home'});
     }
   }
-  
+
   render() {
     return (
-      <div>
-        <HelloWorld />
-        <p className="message">Crie, construa, inove!</p>
+      <div className="HomePage">
+        <Header areaPath="home" />
+        <div className="HomePage__wrapper">
+          <div className="HomePage__bannerarea">
+            <Area id="home/banner"/>
+          </div>
+          <div className="HomePage__shelfarea">
+            <Area id="home/shelf1"/>
+          </div>
+          <Policies/>
+        </div>
+        <Newsletter/>
+        <Footer/>
       </div>
     );
   }

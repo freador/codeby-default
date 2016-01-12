@@ -1,0 +1,21 @@
+@import "~utils/base/base";
+
+.Header {
+  background: @gray-soft;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -1px 0px 1px rgba(0,0,0,0.1);
+  position: static;
+  top: 0;
+  width: 100%;
+  z-index: @zindex-2;
+
+  &__inner {
+    .theme-width();
+    padding: (@pad * 2.3) 0px;
+
+    //Fix for medium screens only
+    @media (min-width: @screen-sm-min) and (max-width: @screen-lg-min) {
+      padding: (@pad * 2.3) 0px;
+    }
+  }
+}

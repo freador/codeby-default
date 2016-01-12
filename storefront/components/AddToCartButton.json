@@ -1,0 +1,7 @@
+{
+  "assets": [
+    "common.js",
+    "AddToCartButton.js",
+    "editors/index.js"
+  ]
+}

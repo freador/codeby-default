@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="66px" height="17px" viewBox="0 0 66 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
+    <title>pullArrow_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="pullArrow_icon" sketch:type="MSArtboardGroup" transform="translate(-17.000000, -42.000000)" fill="#000000">
+            <path d="M49.7388799,47.6365679 L20.7104206,58.7795494 L20.7104206,58.7795494 C19.3009414,59.3205978 17.7248507,58.6174444 17.1821288,57.2036056 C16.6415324,55.7953038 17.3455029,54.210564 18.7496483,53.671563 L48.6800296,42.1823661 C49.1842168,41.9888268 49.7097231,41.9544926 50.2016233,42.0549435 C50.4359331,42.078771 50.670803,42.1336433 50.9008572,42.2219528 L80.8312384,53.7111498 C82.2407177,54.2521981 82.9414798,55.8293535 82.3987579,57.2431923 C81.8581615,58.651494 80.2746116,59.3581371 78.8704662,58.8191362 L49.7388799,47.6365679 Z" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

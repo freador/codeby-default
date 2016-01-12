@@ -1,9 +1,8 @@
 {
-  "name": "codeby-default",
+  "name": "codeyb-default",
+  "title": "Default Storefront theme",
+  "version": "0.8.2",
   "vendor": "codeby",
-  "title": "",
-  "description": "",
-  "version": "0.1.0",
   "dependencies": {
     "vtex.editor": "0.x",
     "vtex.storefront": "0",

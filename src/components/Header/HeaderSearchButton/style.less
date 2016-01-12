@@ -1,0 +1,51 @@
+@import "~utils/base/base";
+
+.HeaderSearchButton {
+  .css-utils-clean-btn();
+  .css-utils-no-outlines();
+  float: right;
+  padding-left: 0px;
+  padding-top: 0px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  //Mobile Only
+  @media (max-width: @screen-xs-max) {
+    float: right;
+  }
+
+  &__inner {
+    border: 2px solid @secondary-color;
+    border-radius: 2.5px;
+    height: 35.5px;
+    margin-top: 3.75px;
+    background: @secondary-color;
+
+    @media (min-width: @screen-sm-max) {
+      width: 40px;
+    }
+
+    @media (min-width: @screen-sm-min) {
+      border-radius: 2.5px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      height: 41.2px;
+      max-width: 40px;
+    }
+  }
+
+  &__svg {
+    padding: 6px @pad 4px 8px;
+
+    path {
+      fill: #FFF;
+    }
+
+    @media (min-width: @screen-sm-min) {
+      padding: 10px 9px 4px 10px;
+
+    }
+  }
+}

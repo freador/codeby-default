@@ -2,20 +2,17 @@ var webpack = require('webpack');
 var path = require('path');
 var pkg = require('./package.json');
 var meta = require('./meta.json');
-var publicPath = '/assets/@' + meta.vendor + '.' + pkg.name + '/';
+var publicPath = '/assets/@vtex.' + pkg.name + '/';
 var production = process.env.NODE_ENV === 'production';
-var hot = process.env.NODE_ENV === 'hot';
-var svgoConfig = JSON.stringify({
-  plugins: [
-    {removeTitle: true},
-    {convertColors: {shorthex: false}},
-    {convertPathData: false}
-  ]
-});
 
 var config = {
   entry: {
     'HomePage': ['./src/pages/HomePage/index.js'],
+    'ProductPage': ['./src/pages/ProductPage/index.js'],
+    'CategoryPage': ['./src/pages/CategoryPage/index.js'],
+    'SearchPage': ['./src/pages/SearchPage/index.js'],
+    'SearchHeader': ['./src/components/SearchHeader/index.js'],
+    'CategoryHeader': ['./src/components/CategoryHeader/index.js'],
     'editors/index': ['./src/editors/index.js']
   },
 
@@ -41,7 +38,7 @@ var config = {
         }
       }, {
         test: /\.less$/,
-        loader: 'style-loader!css-loader!less-loader'
+        loader: 'style-loader!css-loader!autoprefixer-loader?browsers=last 2 version!less-loader'
       }, {
         test: /\.css$/,
         loader: 'style-loader!css-loader'
@@ -81,9 +78,11 @@ var config = {
     'intl': 'Intl',
     'react': 'React',
     'react-dom': 'ReactDOM',
+    'react-addons-css-transition-group': 'ReactCSSTransitionGroup',
     'react-intl': 'ReactIntl',
     'react-router': 'ReactRouter',
-    'sdk': 'storefront.sdk'
+    'sdk': 'storefront.sdk',
+    'vtex-editor': 'vtex.editor'
   },
 
   resolve: {
@@ -125,7 +124,9 @@ var config = {
 
 if (process.env.HOT) {
   config.devtool = 'source-map';
-  config.entry['editors/index'].unshift('webpack-hot-middleware/client');
+  for (entryName in config.entry) {
+    config.entry[entryName].unshift('webpack-hot-middleware/client');
+  }
   config.plugins.unshift(new webpack.NoErrorsPlugin());
   config.plugins.unshift(new webpack.HotModuleReplacementPlugin());
 
@@ -138,7 +139,7 @@ if (process.env.HOT) {
         locals: ['module']
       }, {
         transform: 'react-transform-catch-errors',
-        imports: ['react', 'redbox-react']
+        imports: ['react', 'redbox-react', 'utils/reporterOptions']
       }]
     }
   };

@@ -1,0 +1,40 @@
+@import "~utils/base/base";
+
+.HeaderLogo {
+  position: relative;
+  min-height: 38px;
+
+  //Mobile only
+  @media (max-width: @screen-xs-max) {
+    left: 30px;
+  }
+
+  //Desktop & Tablet
+  @media (min-width: @screen-sm-min) {
+    float: left;
+
+    .HeaderLogo__font {
+      text-align: left;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin-top: 4px;
+  }
+
+  &__font {
+    font-family: 'Petala Pro', 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    margin: 0;
+    padding-top: @pad;
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

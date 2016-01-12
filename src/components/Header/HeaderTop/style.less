@@ -1,0 +1,105 @@
+@import "~utils/base/base";
+
+.HeaderTop {
+  background: darken(@gray-soft, 8%);
+  width: 100%;
+
+  &__wrap {
+    .theme-width();
+  }
+
+  &__social {
+    @media (max-width: @screen-xs-min) {
+      padding-left: 0px;
+    }
+  }
+
+  &__button {
+    .css-utils-clean-btn();
+    background: darken(#F4F7FA, 2%);
+    height: 25px;
+    margin: @pad 0;
+    min-width: 25px;
+    padding: 0px;
+
+    a {
+      font-size: 0.6em;
+      display: block;
+      &:hover { text-decoration: none; }
+    }
+
+    & + & {
+      margin-left: @pad / 2;
+    }
+
+    &:hover {
+      background: darken(#F4F7FA, 5%);
+    }
+  }
+
+  &__icon {
+    padding: 3px 2.5px;
+    padding-top: 5px;
+
+  }
+
+  &__contact {
+    font-size: 0.95em;
+    font-weight: 400;
+
+    @media (min-width: @screen-sm-min) {
+      //padding-right: 0px;
+    }
+  }
+
+  &__phone-cta {
+    float: left;
+    padding: 10px (@pad * 2.5) 10px 0px;
+
+    @media (min-width: @screen-sm-min) {
+      float: right;
+    }
+
+  }
+
+  &__login {
+    float: right;
+    padding: 10px 0px;
+
+    & + & {
+      padding-right: @pad * 2.5;
+    }
+  }
+
+  &__login-link {
+    color: darken(@gray-soft, 68%);
+    //text-transform: uppercase;
+
+    &:hover {
+      color: darken(@gray-soft, 48%);
+    }
+  }
+
+  &__phone-number {
+    font-weight: 500;
+  }
+
+  &__phone-url {
+      color: darken(@gray-soft, 68%);
+
+      @media (min-width: @screen-sm-min) {
+        font-weight: 800;
+      }
+
+      &:hover {
+        color: darken(@gray-soft, 48%);
+
+        @media (min-width: @screen-md-min) {
+          color: darken(@gray-soft, 68%);
+          cursor: default;
+          text-decoration: none;
+        }
+      }
+  }
+
+}

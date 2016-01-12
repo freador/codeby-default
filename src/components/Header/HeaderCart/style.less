@@ -1,0 +1,83 @@
+@import "~utils/base/base";
+
+.HeaderCart {
+  .css-utils-clean-btn();
+  .css-utils-no-outlines();
+  float: right;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &__svg {
+    float: left;
+    padding: @pad @pad 1px @pad;
+
+    g {
+      fill: @secondary-color;
+    }
+
+    //Desktop + Tablet + Smaller Tablet
+    @media (min-width: @screen-sm-min) {
+      padding-top: 5px;
+      padding-bottom: 0px;
+      float: right;
+    }
+  }
+
+  &__button {
+    background: @secondary-color;
+    color: white;
+
+    //Mobile Only
+    @media (max-width: @screen-xs-max) {
+      float: right;
+      border: 2px solid @secondary-color;
+      border-radius: 2.5px;
+      height: 35.5px;
+      margin-top: 3.75px;
+
+      &:hover {
+        background: @secondary-color;
+        color: white;
+      }
+    }
+
+    //Desktop + Tablet
+    @media (min-width: @screen-xs-max) {
+      border: 2px solid @secondary-color;
+      border-radius: 2.5px;
+      height: 41.5px;
+      margin-top: 4px;
+      min-width: 110px;
+      padding: 5px (@pad * 1.5);
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .HeaderCart__desktop-itens {
+        text-decoration: none;
+      }
+    }
+
+    g {
+      fill: white;
+    }
+
+    .HeaderCart__desktop-itens {
+      color: white;
+    }
+  }
+
+  &__desktop-itens {
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+
+    display: inline-block;
+    color: @secondary-color;
+    font-weight: 500;
+    float: left;
+    padding-top: 2.5px;
+  }
+}

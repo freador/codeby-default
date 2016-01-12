@@ -1,0 +1,61 @@
+@import "~utils/base/base";
+
+.SearchHeader {
+  background: #F7F7F7;
+
+  &__icon, .icon {
+    float: left;
+    display: inline-block;
+    padding-top: @pad;
+  }
+
+  .icon-label {
+    font-size: 0.9em;
+    float: left;
+    font-weight: 500;
+    padding-top: 6.5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__grid-button {
+    .css-utils-clean-btn();
+    .css-utils-no-outlines();
+    float: right;
+    padding-left: @pad / 2;
+    padding-right: @pad / 2;
+  }
+
+  &__container {
+    padding: (@pad * 3) 0px;
+  }
+
+  &__content {
+    margin-bottom: 1em;
+  }
+
+  &__title {
+    padding: 0px (@pad * 2);
+  }
+
+  &__title-inner {
+    float: left;
+    margin-top: 0px;
+    margin-bottom: @pad / 2;
+    max-width: 100%;
+    padding: 0px (@pad * 2);
+    text-align: left;
+  }
+
+  &__buttons {
+    margin-top: 0.75em;
+    padding: 0px (@pad * 2);
+  }
+
+  &__results {
+    color: #777777;
+    display: block;
+    font-family: 'Lato';
+    font-weight: 400;
+  }
+}
