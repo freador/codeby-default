@@ -3,7 +3,7 @@ import HomePage from './HomePage';
 
 let components = [
   {
-    name: 'HomePage@vtex.storefront-theme',
+    name: 'HomePage@codeby.codeby-default',
     constructor: HomePage
   }
 ];

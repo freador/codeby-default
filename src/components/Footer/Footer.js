@@ -23,7 +23,7 @@ class Footer extends React.Component {
               <li className="Footer__item"><a href="#" className="Footer__menu-link">Sobre</a></li>
               <li className="Footer__item"><a href="#" className="Footer__menu-link">Termos de uso</a></li>
             </ul>
-            <span className="Footer__address">Praia de Botafogo, 518, Sobreloja, Botafogo. Rio de Janeiro, RJ - 22250-040</span>
+            <span className="Footer__address">Sobreloja, Botafogo. Rio de Janeiro, RJ - 22250-040</span>
           </div>
 
         </div>
